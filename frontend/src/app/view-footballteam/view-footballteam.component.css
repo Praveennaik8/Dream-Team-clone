@@ -1,0 +1,214 @@
+.bigcontainer{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./../../assets/page3/background.jpg);
+    background-position: center;
+    background-size: cover; 
+    padding-left: 8%;
+    padding-right: 8%; 
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+b{
+    color: whitesmoke;
+    background-color: black;
+}
+
+.navbar{
+    height: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.col{
+    flex-basis: 50%;
+    padding-left: 250px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.col1{
+    /* flex-basis: 50%; */
+    
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    display: inline-block;
+    align-self: center;
+}
+.centerme{
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    object-fit: fill;
+}
+.col2{
+    /* flex-basis: 50%; */
+    /* padding-left: 170px; */
+    margin-top: 50px;
+    align-items: center;
+    display: inline-block;
+
+}
+.col3{
+    /* flex-basis: 50%; */
+    /* padding-left: 170px; */
+    /* padding-left: 60px; */
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    display: inline-block;
+    align-self: center;
+}
+
+h1{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 15px;
+    text-align: center;
+}
+
+button{
+    width: 72px;
+    color:#fff;
+    font-size: 15px;
+    padding: 12px 0;
+    background:black;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 10px;
+}
+
+#button_edit{
+    width: 200px;
+    height: 50px;
+    color:black;
+    font-size: 15px;
+    padding: 12px 0;
+    background:white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-left: 370px;
+    margin-top: 30px;
+}
+
+
+.card{
+    width:200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    background-color: transparent;
+}
+
+.card1{
+    background-image: url(./../../assets/page3/players/indian/klrahul.png);
+}
+
+.card2{
+    background-image: url(./../../assets/page3/players/indian/rohit.png);
+}
+
+.card3{
+    background-image: url(./../../assets/page3/players/indian/dhoni.png);
+}
+
+.card4{
+    background-image: url(./../../assets/page3/players/australia/finch.png);
+}
+
+/* .card5{
+    background-image: url(./../../assets/page3/players/indian/virat.png);
+} */
+
+.card6{
+    background-image: url(./../../assets/page3/players/australia/maxwel.png);
+}
+
+.card7{
+    background-image: url(./../../assets/page3/players/indian/jadeja.png);
+}
+
+.card8{
+    background-image: url(./../../assets/page3/players/australia/Adam-Zampa.png);
+}
+
+.card9{
+    background-image: url(./../../assets/page3/players/indian/cahal.png);
+}
+
+.card10{
+    background-image: url(./../../assets/page3/players/australia/lyon.png);
+}
+
+.card11{
+    background-image: url(./../../assets/page3/players/indian/bumrah.png);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+h5{
+    color: #fff;
+    text-shadow: 0 0 10px #999;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card p{
+    color:black;
+    font-size: 18px;
+}

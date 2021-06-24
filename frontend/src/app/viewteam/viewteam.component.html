@@ -1,0 +1,103 @@
+<div class="bigcontainer">
+    <br>
+    <h1>Selected players</h1>
+    <br>
+        <div class="centerme">
+            <div class="card card1 " style="background-image: url(./../../assets/page3/players/{{captain.Playername}}.png);">
+            <br><br><br><br><br><br><br><br><br><br>
+            <p>
+               <b>{{captain.role}}</b>
+            </p>
+            <br>
+            <h5>{{getName(captain.Playername)}}</h5>
+            <span>    
+            <button type="button">{{captain.points}}</button>
+            <button type="button">C</button>
+            </span>
+            </div>
+            <div class="card card2" style="background-image: url(./../../assets/page3/players/{{viceCaptain.Playername}}.png);">
+                <br><br><br><br><br><br><br><br><br><br>
+            <p>
+               <b>{{viceCaptain.role}}</b>
+            </p>
+            <br>
+            <h5>{{getName(viceCaptain.Playername)}}</h5>
+            <span>    
+            <button type="button">{{viceCaptain.points}}</button>
+            <button type="button">VC</button>
+            </span>
+            </div>
+            <div class="card card1" *ngIf="showWK" style="background-image: url(./../../assets/page3/players/{{wicketKeeper.Playername}}.png);">
+                <br><br><br><br><br><br><br><br><br><br>
+                <p>
+                   <b>{{wicketKeeper.role}}</b>
+                </p>
+                <br>
+                <h5>{{getName(wicketKeeper.Playername)}}</h5>
+                <span>    
+                <button type="button">{{wicketKeeper.points}}</button>
+                <button type="button">WK</button>
+                
+                </span>
+            </div>
+
+        </div>
+        <br>
+
+        <div class="centerme"> 
+        <div class="col1" *ngFor="let player of Batsmen">
+            <div class="card card3" style="background-image: url(./../../assets/page3/players/{{player.Playername}}.png);">
+                <br><br><br><br><br><br><br><br><br><br>
+                <p>
+                   <b>{{player.role}}</b>
+                </p>
+                <br>
+                <h5>{{getName(player.Playername)}}</h5>
+                <span>    
+                <button type="button">{{player.points}}</button>
+                <button type="button">{{player.role}}</button>
+                <!-- <button type="button">Wk</button> -->
+                </span>
+            </div>
+        </div>
+        </div>
+        <br>
+        <div class="centerme"> 
+        <div class="col1" *ngFor="let player of Allrounders" >
+            <div class="card card3" style="background-image: url(./../../assets/page3/players/{{player.Playername}}.png);">
+                <br><br><br><br><br><br><br><br><br><br>
+                <p>
+                   <b>{{player.role}}</b>
+                </p>
+                <br>
+                <h5>{{getName(player.Playername)}}</h5>
+                <span>    
+                <button type="button">{{player.points}}</button>
+                <button type="button">{{player.role}}</button>
+                <!-- <button type="button">Wk</button> -->
+                </span>
+            </div>
+        </div>
+        </div>
+        <br>
+        <div class="centerme"> 
+        <div class="col1" *ngFor="let player of Bowlers" >
+            <div class="card card3" style="background-image: url(./../../assets/page3/players/{{player.Playername}}.png);">
+                <br><br><br><br><br><br><br><br><br><br>
+                <p>
+                   <b>{{player.role}}</b>
+                </p>
+                <br>
+                <h5>{{getName(player.Playername)}}</h5>
+                <span>    
+                <button type="button">{{player.points}}</button>
+                <button type="button">{{player.role}}</button>
+                <!-- <button type="button">Wk</button> -->
+                </span>
+            </div>
+        </div>
+        </div>
+        <div class="col1">
+            <button type="button" id="button_edit"><b>Edit team</b></button>
+        </div>
+</div>

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+.bigcontainer{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./../../assets/cricket_images/background.jpg);
+    background-position: center;
+    background-size: cover; 
+    padding-left: 8%;
+    padding-right: 8%; 
+    box-sizing: border-box;
+  }
+.container{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./../../assets/cricket_images/background.jpg);
+    background-position: center;
+    background-size: cover; 
+    padding-left: 8%;
+    padding-right: 8%; 
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.row{
+    display: flex;
+    height:88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+    align-items: center;
+}
+
+h1{
+    color: #fff;
+    font-size: 40px;
+}
+
+p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 15px;
+}
+
+button{
+    width: 160px;
+    color: #000;
+    font-size: 15px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.card{
+    width:200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1{
+    background-image: url(./../../assets/cricket_images/dark3.jpg);
+}
+
+.card2{
+    background-image: url(./../../assets/cricket_images/dark2.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+h5{
+    color: #fff;
+    text-shadow: 0 0 10px #999;
+}
+
+.card p{
+    color:yellow;
+    text-shadow: 0 0 15px #000;
+    font-size: 12px;
+}

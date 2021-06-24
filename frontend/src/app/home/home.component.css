@@ -1,0 +1,34 @@
+#trans {
+     margin-left: 0px; 
+    font-weight: bold;
+    font-size: 45px;
+    color: black;
+    background-color: aliceblue;
+    width: fit-content;
+    border-radius: 50%;
+    height: 350px;
+    width: 520px;
+    
+}
+.bigcontainer{
+    width: 100%;
+    height: 80vh;
+    background-image:url(./../../assets/images/th.jpg);
+    /* background-position: center; */
+    background-size: auto; 
+    padding-left: 8%;
+    padding-right: 8%; 
+    box-sizing: border-box;
+  }
+p{
+    padding-top: 60px;
+    padding-left: 50px;
+}
+/* .app{
+    background-color: red;
+    opacity: 0.6;
+}
+.body{
+    background-color: red;
+    opacity: 0.6;
+} */

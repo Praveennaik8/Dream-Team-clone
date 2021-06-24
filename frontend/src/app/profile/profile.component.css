@@ -1,0 +1,16 @@
+.bigcontainer{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./../../assets/images/bg.jpg);
+    background-position: center;
+    background-size: cover; 
+    padding-left: 8%;
+    padding-right: 8%; 
+    box-sizing: border-box;
+  }
+.container{
+    background-color: bisque;
+}
+.jumbotron{
+    background-color: aqua;
+}

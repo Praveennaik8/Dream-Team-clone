@@ -1,0 +1,18 @@
+
+
+
+a{
+    font-size: 22px;
+    color: rgb(3, 3, 3);
+     
+}
+.navbar .navbar-expand .navbar-dark{
+  height: 12%;
+  display: flex;
+  align-items: center;
+  background-color: blue;
+}
+
+#logo{
+  width: 200px;
+}

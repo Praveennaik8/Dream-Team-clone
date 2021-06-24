@@ -1,0 +1,137 @@
+<div class="bigcontainer">
+    <h2>Select Players</h2>
+    <br>
+    <h3>Total Points = {{totalpoints}} </h3>
+    <h3>Captain :{{sd_cn}}</h3>
+    <h3>Vice Captain :{{sd_vc}}</h3>
+    <br>
+    <div class="centerme">
+        <hr>
+        <h3>Wicket Keepers</h3>
+        <div class="col1" *ngFor="let player of wicketkeeperList">
+            <div class="card card3" style="background-image: url(./../../assets/page3/players/{{player.Playername}}.png);">
+                <br><br><br><br><br><br><br><br>
+                <h4>{{getName(player.Playername)}}</h4>
+                {{player.points}}
+                <br>
+                <div class="selected" *ngIf="isPresent(player)">
+                    selected
+                </div>
+                <span>  
+                <button class="b-add" (click)="addWK(player)">Add</button>
+                <button class="b-rem" (click)="remWK(player)">Remove</button>
+                </span>
+                <span>  
+                    <button class="b-c" (click)="captain(player)">C</button>
+                    <button class="b-c" (click)="viceCaptain(player)" >VC</button>
+                </span>
+            </div>
+            
+            
+        </div>
+        <br><br>
+    <strong>{{WKmessage}}</strong>   
+    
+    <br><br>
+    </div>
+    <br>
+    <hr>
+    <div class="centerme">
+        <hr>
+        <h3>Batsmen</h3>
+        <div class="col1" *ngFor="let player of batsmanList">
+            <div class="card card3" style="background-image: url(./../../assets/page3/players/{{player.Playername}}.png);">
+                <br><br><br><br><br><br><br><br>
+                <h4>{{getName(player.Playername)}}</h4>
+                {{player.points}}
+                <br>
+                <div class="selected" *ngIf="isPresent(player)">
+                    selected
+                </div>
+                <span>  
+                    <button class="b-add" (click)="addBat(player)">Add</button>
+                    <button class="b-rem" (click)="remBat(player)" >Remove</button>
+                </span>
+                <span>  
+                    <button class="b-c" (click)="captain(player)">C</button>
+                    <button class="b-c" (click)="viceCaptain(player)" >VC</button>
+                </span>
+            </div>
+        </div>
+        <br><br>
+    
+        <strong>{{batsmanmessage}}</strong>   
+        <br><br>
+    </div>
+    <div class="centerme">
+        <hr>
+        <h3>Allrounders </h3>
+        <div class="col1" *ngFor="let player of allrounderList">
+            <div class="card card3" style="background-image: url(./../../assets/page3/players/{{player.Playername}}.png);">
+                <br><br><br><br><br><br><br><br>
+                <h4>{{getName(player.Playername)}}</h4>
+                {{player.points}}
+                <br>
+                <div class="selected" *ngIf="isPresent(player)">
+                    selected
+                </div>
+                <span>  
+                    <button class="b-add" (click)="addAr(player)">Add</button>
+                    <button class="b-rem" (click)="remAr(player)">Remove</button>
+                </span>
+                <span>  
+                    <button class="b-c" (click)="captain(player)">C</button>
+                    <button class="b-c" (click)="viceCaptain(player)" >VC</button>
+                </span>
+            </div>
+            
+        </div>
+        <br><br>
+        
+        <strong>{{allroundermessage}}</strong>   
+        <br><br>
+    </div>
+    <div class="centerme">
+        <hr>
+        <h3>Bowlers</h3>
+        <div class="col1" *ngFor="let player of bowlerList">
+            <div class="card card3" style="background-image: url(./../../assets/page3/players/{{player.Playername}}.png);">
+                <br><br><br><br><br><br><br><br>
+                <h4>{{getName(player.Playername)}}</h4>
+                {{player.points}}
+
+                <br>
+                <div class="selected" *ngIf="isPresent(player)">
+                    selected
+                </div>
+                <span>  
+                    <button class="b-add" (click)="addBowl(player)">Add</button>
+                    <button class="b-rem" (click)="remBowl(player)" >Remove</button>
+                </span>
+                <span>  
+                    <button class="b-c" (click)="captain(player)">C</button>
+                    <button class="b-c" (click)="viceCaptain(player)" >VC</button>
+                </span>
+            </div>
+            
+        </div>
+        <br><br>
+  
+    <strong>{{bowlermessage}}</strong>   
+    <br><br>
+    </div>
+    <br>
+    <br>
+    <button class="b-save" (click)="saveTeam()">Save Team</button>
+    <br><br>
+ 
+    <strong>{{ErrorMessage}}</strong>   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</div>

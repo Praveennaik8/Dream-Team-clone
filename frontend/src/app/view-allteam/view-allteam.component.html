@@ -1,0 +1,27 @@
+<div class="bigcontainer"> 
+    <br> 
+    <h3>{{errorMessage}}</h3>
+    <div class="centerme"> 
+        <div class="col1" *ngFor="let team of teamList;let i = index"> 
+            <div class="card card1">
+                <h5> Team {{i+1}}</h5> 
+                <br><br><br><br><br><br><br>
+                <button type="button" (click)="updateteamno(team)"> Team {{i+1}} players list</button>
+                <button type="button" (click)="deleteTeam(team)" style="background-color: red;"> Delete X </button>
+            </div>
+        </div>
+    </div>
+    <h3>{{newmessage}}</h3>
+
+        <!-- <div class="card card2">
+        <h5>Team 2</h5>
+        <br><br><br><br><br><br><br><br><br><br>
+        <a href="/view" routerLink="/view"><button type="button" target="/view"> Team 2 players list</button></a>
+        </div>
+        <div class="card card3">
+        <h5>Team 3</h5>
+        <br><br><br><br><br><br><br><br><br><br>
+        <a href="/view" routerLink="/view"><button type="button" target="/view"> Team 3 players list</button></a>
+        </div> -->
+    
+</div>
