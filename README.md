@@ -2,7 +2,7 @@
 
 ## Fantasy team building website.
 
-NOTE : It's a demo website only.
+NOTE : It's a demo website only. It's not optimised for Mobile or Tablet. Kindly open it in Desktop.
 
 Referred login authentication from : [bezkoder](https://github.com/bezkoder)
 
