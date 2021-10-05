@@ -6,5 +6,4 @@ NOTE : It's a demo website only.
 
 Referred login authentication from : [bezkoder](https://github.com/bezkoder)
 
-GUI Preview:
-To Be Done
+Website : [Click Here!](https://praveennaik8.github.io/Frontend/)
